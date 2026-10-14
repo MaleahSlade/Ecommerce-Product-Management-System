@@ -43,7 +43,7 @@ export class Product {
   // you give every Product object a method that knows how to display its own details.
   
   // Displays the product’s details.
-  displayDetails(): void {
+    displayDetails(): void {
     console.log(`Product: ${this.title}`);
     console.log(`Category: ${this.category}`);
     console.log(`Original Price: $${this.price.toFixed(2)}`);
@@ -52,11 +52,11 @@ export class Product {
     console.log(`Rating: ${this.rating}`);
   }
 
-}
   // Calculates and returns the product's price after the discount.
   getPriceWithDiscount(): number {
     return this.price - (this.price * this.discountPercentage / 100);
   }
+}
 
   //Console.log not used here because we want other parts of our application 
   // to use the calculated price. For example, the main application will 

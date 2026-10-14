@@ -1,15 +1,14 @@
-// /**
-
-// * Calculates the tax amount for a product based on its category.
-// * @param price - The price used to calculate tax.
-// * @param category - The category the product belongs to.
-// * @returns The dollar amount of tax owed.
-//     */
-    export function calculateTax(
-    price: number,
-    category: string
-    ): number {
-    const taxRate = category.toLowerCase() === “groceries” ? 0.03 : 0.0475;
-
-return price * taxRate;
+/**
+ * Calculates the tax amount for a product based on its category.
+ * @param price - The price used to calculate tax.
+ * @param category - The category the product belongs to.
+ * @returns The dollar amount of tax owed.
+ */
+export function calculateTax(
+  price: number,
+  category: string
+): number {
+  const taxRate =
+    category.toLowerCase() === "groceries" ? 0.03 : 0.0475;
+  return price * taxRate;
 }

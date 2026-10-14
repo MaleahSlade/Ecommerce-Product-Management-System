@@ -1,0 +1,1 @@
+{"version":3,"file":"taxCalculator.js","sourceRoot":"","sources":["taxCalculator.ts"],"names":[],"mappings":";;;AAAA;;;;;GAKG;AACH,sBACE,KAAa,EACb,QAAgB;IAEhB,MAAM,OAAO,GACX,QAAQ,CAAC,WAAW,EAAE,KAAK,WAAW,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,MAAM,CAAC;IACzD,OAAO,KAAK,GAAG,OAAO,CAAC;AACzB,CAAC"}
