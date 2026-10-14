@@ -41,13 +41,24 @@ export class Product {
   //Example of OOP: You’re demonstrating object-oriented programming. 
   // Instead of writing separate console statements for every product, 
   // you give every Product object a method that knows how to display its own details.
+  
+  // Displays the product’s details.
   displayDetails(): void {
     console.log(`Product: ${this.title}`);
     console.log(`Category: ${this.category}`);
-    console.log(`Price: $${this.price.toFixed(2)}`);
+    console.log(`Original Price: $${this.price.toFixed(2)}`);
     console.log(`Discount: ${this.discountPercentage}%`);
+    console.log(`Discounted Price: $${this.getPriceWithDiscount().toFixed(2)}`);
     console.log(`Rating: ${this.rating}`);
   }
 
 }
+  // Calculates and returns the product's price after the discount.
+  getPriceWithDiscount(): number {
+    return this.price - (this.price * this.discountPercentage / 100);
+  }
+
+  //Console.log not used here because we want other parts of our application 
+  // to use the calculated price. For example, the main application will 
+  // eventually be able to display the discounted price or use it in another calculation.
 
